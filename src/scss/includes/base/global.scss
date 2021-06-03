@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  &:not(iframe) {
+    transition: 0.25s ease;
+    transition-property: background, border, color, left, margin, padding, right, opacity;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img,
+video,
+audio {
+  max-width: 100%;
+  height: auto;
+}
+
+label,
+button,
+input,
+select {
+  cursor: pointer;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+abbr[title],
+acronym[title],
+dfn {
+  cursor: help;
+}
+
+textarea {
+  resize: vertical;
+}
+
+[disabled] {
+  cursor: default;
+}
+
+[aria-disabled="true"] {
+  cursor: default;
+  pointer-events: none;
+}
+
+.no-js button[type="button"] {
+  display: none;
+}
+
+sub,
+sup {
+  line-height: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  min-height: 100vh;
+  transition: 0s;
+  color: $color-black;
+  background-color: #f9f8f7;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+::selection {
+  color: white;
+  background: $color-red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  cursor: auto;
+  background: transparent;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include placeholder-color(rgba($color-black, 0.5));
+
+  &.not-valid {
+    border-color: #f00;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+
+  &:focus::-ms-value {
+    color: #12161e;
+    background: #fff;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  &:not([href]) {
+    cursor: initial;
+  }
+}
+
+p {
+  &:last-child {
+    margin: 0;
+  }
+}
+
+button,
+input,
+label,
+select {
+  cursor: auto;
+}
+
+strong {
+  font-weight: 600;
+}
