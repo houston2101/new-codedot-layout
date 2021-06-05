@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%=title%></title>
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="page-wrapper">
-      <header class="header">header</header>
+<header class="header">
+            <!--navbar-->
+            <div class="navbar">
+                <img id="logo" src="../pictures/codelogo.svg" alt="codedot logo">
+                <nav>
+                    <div class="navelem"><a href="homepage.html">Home</a></div>
+                    <!--services navelem-->
+                    <div class="navelem">
+                        <div class="dropdown">
+                            <label>Services</label>
+                            <a class="droplist"><img src="../pictures/Rectangle.svg"></a>
+                            <div class="dropcontent">
+                                <a href="">Web development</a>
+                                <a href="">Project management</a>
+                                <a href="">UI/UX design</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--services navelem-->
+                    <div class="navelem"><a href="">About us</a></div>
+                    <div class="navelem"><a href=""><button name="contact" type="button" class="contactbutton">Contact us</button></a></div>
+                    <div class="navelem"><a href="">EN <img src="../pictures/choosinglang.svg"></a></div>
+                </nav>
+            </div>
+            <!--navbar-->
+
+            <!--slogan-->
+            <div class="slogan">
+                <img id="man" src="../pictures/man.svg" alt="man with laptop">
+            </div>
+</header>
+    </div>
+</body>
+</html>
