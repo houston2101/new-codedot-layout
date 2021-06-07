@@ -1,0 +1,72 @@
+.navbar {
+  display: flex;
+  align-items: center;
+
+  .nav {
+    &-list {
+      display: flex;
+
+      &.languages .dropdown-menu {
+        transform: translateX(-38px);
+
+        @include desktop {
+          transform: translateX(-16px);
+        }
+
+        @include desktop-extra {
+          transform: none;
+        }
+      }
+    }
+
+    &-link {
+      font-size: pxToRem(16);
+      line-height: pxToRem(20);
+      color: $color-white;
+      padding: pxToRem(12) pxToRem(16);
+      cursor: pointer;
+      display: block;
+      font-weight: 400;
+
+      &:hover {
+        color: $color-yellow
+      }
+
+      &.btn {
+        margin-left: pxToRem(16);
+        margin-right: pxToRem(16);
+      }
+    }
+
+    &-menu {
+      display: none;
+
+      @include tablet {
+        display: flex;
+      }
+    }
+
+    &-toggle {
+      display: block;
+      width: 28px;
+      height: 24px;
+      margin-left: 6px;
+
+      @include tablet {
+        display: none;
+      }
+
+      span {
+        display: block;
+        width: 28px;
+        height: 2px;
+        background-color: $color-yellow;
+        margin-bottom: 9px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

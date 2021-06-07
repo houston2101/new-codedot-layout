@@ -1,9 +1,17 @@
+// path
+$path-fonts: "../fonts/montserrat/montserrat-";
+$path-img: "../img/";
+
 // Colors
-$color-black: #1a1a1a;
-$color-red: #f2571f;
+$color-white: #fff;
+$color-black: #222;
+$color-yellow: #F5CC3D;
 
 // Media queries
-$desktop-extra: 1200px;
-$desktop: 992px;
-$tablet: 768px;
-$mobile: 576px;
+$desktop-extra: pxToRem(1280);
+$desktop: pxToRem(992);
+$tablet: pxToRem(768);
+$mobile: pxToRem(576);
+
+// ..
+$borderRadius: pxToRem(20);

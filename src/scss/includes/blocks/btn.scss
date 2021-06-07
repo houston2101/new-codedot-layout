@@ -1,0 +1,14 @@
+.btn {
+  border-radius: 30px;
+  font-weight: 500!important;
+}
+
+.btn-yellow {
+  background-color: $color-yellow!important;
+  color: $color-black!important;
+
+  &:hover {
+    background-color: darken($color-yellow,10%)!important;
+    color: $color-black!important;
+  }
+}

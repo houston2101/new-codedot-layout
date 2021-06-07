@@ -7,16 +7,14 @@
   }
 
   &:not(iframe) {
-    transition: 0.25s ease;
-    transition-property: background, border, color, left, margin, padding, right, opacity;
+    //transition: 0.25s ease;
+    //transition-property: background, border, color, left, margin, padding, right, opacity;
   }
 }
 
 html,
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 input[type="submit"]:focus {
@@ -24,8 +22,9 @@ input[type="submit"]:focus {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -80,10 +79,15 @@ img {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: pxToRem(14);
+  font-weight: 400;
+  font-style: normal;
   min-height: 100vh;
+  margin: 0;
   transition: 0s;
   color: $color-black;
-  background-color: #f9f8f7;
+  background-color: $color-white;
   overscroll-behavior: none;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -93,25 +97,20 @@ body {
   }
 }
 
-::selection {
-  color: white;
-  background: $color-red;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="password"],
 textarea {
   cursor: auto;
-  background: transparent;
+  background-color: transparent;
   -webkit-appearance: none;
 
   &:focus {
     outline: none;
   }
 
-  @include placeholder-color(rgba($color-black, 0.5));
+  @include placeholder-color(rgba($color-black,.5));
 
   &.not-valid {
     border-color: #f00;
@@ -123,7 +122,7 @@ select {
 
   &:focus::-ms-value {
     color: #12161e;
-    background: #fff;
+    background-color: #fff;
   }
 }
 
@@ -142,7 +141,7 @@ a {
 
 p {
   &:last-child {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 

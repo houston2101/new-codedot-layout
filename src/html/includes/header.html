@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%=title%></title>
-    <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <meta charset="utf-8"/>
+  <meta
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    name="viewport"
+  />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title><%=title%></title>
+  <link href="css/main.min.css" rel="stylesheet"/>
+  <link href="favicon/favicon.ico" rel="shortcut icon"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="page-wrapper">
-<header class="header">
-            <!--navbar-->
-            <div class="navbar">
-                <img id="logo" src="../pictures/codelogo.svg" alt="codedot logo">
-                <nav>
-                    <div class="navelem"><a href="homepage.html">Home</a></div>
-                    <!--services navelem-->
-                    <div class="navelem">
-                        <div class="dropdown">
-                            <label>Services</label>
-                            <a class="droplist"><img src="../pictures/Rectangle.svg"></a>
-                            <div class="dropcontent">
-                                <a href="">Web development</a>
-                                <a href="">Project management</a>
-                                <a href="">UI/UX design</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--services navelem-->
-                    <div class="navelem"><a href="">About us</a></div>
-                    <div class="navelem"><a href=""><button name="contact" type="button" class="contactbutton">Contact us</button></a></div>
-                    <div class="navelem"><a href="">EN <img src="../pictures/choosinglang.svg"></a></div>
-                </nav>
-            </div>
-            <!--navbar-->
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="container">
+        <a href="/" class="header__logo">
+          <img alt="CODE DOT" src="uploads/logo.svg"/>
+        </a>
 
-            <!--slogan-->
-            <div class="slogan">
-                <img id="man" src="../pictures/man.svg" alt="man with laptop">
-            </div>
-</header>
-    </div>
-</body>
-</html>
+        <nav class="navbar">
+          <ul class="nav-list nav-menu">
+            <li class="nav-item dropdown">
+              <span class="nav-link dropdown-toggle">Services</span>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Web development</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Project management</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">UI/UX design</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a></li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-yellow" href="#">Contact us</a>
+            </li>
+          </ul>
+          <ul class="nav-list languages">
+            <li class="nav-item dropdown">
+              <span class="nav-link dropdown-toggle">EN</span>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">English</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Русский</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Deutsche</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>

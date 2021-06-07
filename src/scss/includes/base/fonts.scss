@@ -1,14 +1,44 @@
-// Fonts
-/*fonts for all pages in project*/
+// font Montserrat
 @font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format("truetype"), /*стандартный*/
-    url(../fonts/Montserrat/Montserrat-Light.ttf) format("truetype"), /*тонкое начертание*/
-    url(../fonts/Montserrat/Montserrat-ExtraLight.ttf) format("truetype"), /*очень тонкое начертание*/
-    url(../fonts/Montserrat/Montserrat-Bold.ttf) format("truetype"); /*жирное начертание*/
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Montserrat';
+  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'),
+  url('#{$path-fonts}extralight.woff2') format('woff2'),
+  url('#{$path-fonts}extralight.woff') format('woff'),
+  url('#{$path-fonts}extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
-/*текст не меньше 14pt*/
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Light'), local('Montserrat-Light'),
+  url('#{$path-fonts}light.woff2') format('woff2'),
+  url('#{$path-fonts}light.woff') format('woff'),
+  url('#{$path-fonts}light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+  url('#{$path-fonts}regular.woff2') format('woff2'),
+  url('#{$path-fonts}regular.woff') format('woff'),
+  url('#{$path-fonts}regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+  url('#{$path-fonts}bold.woff2') format('woff2'),
+  url('#{$path-fonts}bold.woff') format('woff'),
+  url('#{$path-fonts}bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

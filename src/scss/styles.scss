@@ -1,4 +1,5 @@
 // General
+@import "includes/base/functions";
 @import "includes/base/vars";
 @import "includes/base/mixins";
 @import "includes/base/fonts";
@@ -6,13 +7,19 @@
 @import "includes/base/global";
 
 // Blocks
-//@import "includes/blocks/*";
+@import "includes/blocks/nav";
+@import "includes/blocks/dropdown";
+@import "includes/blocks/btn";
+
+// Sections
+@import "includes/sections/hero";
+@import "includes/sections/services";
 
 // Vendor
 //@import "includes/vendor/**/*";
 
 // Templates
-//@import "templates/*";
+@import "templates/home";
 
 // Core Templates
 @import "footer.scss";
