@@ -11,12 +11,12 @@
   max-width: $desktop-extra;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: pxToRem(20);
+  padding-right: pxToRem(20);
 
   @include desktop {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: pxToRem(40);
+    padding-right: pxToRem(40);
   }
 }
 
@@ -42,17 +42,17 @@
 
 .align-left {
   float: left;
-  margin: 0 10px 5px 0;
+  margin: 0 pxToRem(10) pxToRem(5) 0;
 }
 
 .align-right {
   float: right;
-  margin: 0 0 5px 10px;
+  margin: 0 0 pxToRem(5) pxToRem(10);
 }
 
 .align-center {
   display: block;
-  margin: 0 auto 5px;
+  margin: 0 auto pxToRem(5);
 }
 
 .clearfix::after {
@@ -64,8 +64,8 @@
 .video-wrapper {
   position: relative;
   height: 0;
-  padding-top: 25px;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: pxToRem(25);
+  padding-bottom: pxToRem(56.25%); /* 16:9 */
 
   iframe {
     position: absolute;
@@ -79,8 +79,8 @@
 .visually-hidden {
   position: absolute;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
-  height: 1px;
+  clip: rect(pxToRem(1), pxToRem(1), pxToRem(1), pxToRem(1));
+  width: pxToRem(1);
+  height: pxToRem(1);
   white-space: nowrap;
 }

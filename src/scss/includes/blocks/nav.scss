@@ -7,10 +7,10 @@
       display: flex;
 
       &.languages .dropdown-menu {
-        transform: translateX(-38px);
+        transform: translateX(pxToRem(-38));
 
         @include desktop {
-          transform: translateX(-16px);
+          transform: translateX(pxToRem(-16));
         }
 
         @include desktop-extra {
@@ -29,7 +29,7 @@
       font-weight: 400;
 
       &:hover {
-        color: $color-yellow
+        color: $color-yellow;
       }
 
       &.btn {
@@ -48,9 +48,9 @@
 
     &-toggle {
       display: block;
-      width: 28px;
-      height: 24px;
-      margin-left: 6px;
+      width: pxToRem(28);
+      height: pxToRem(24);
+      margin-left: pxToRem(6);
 
       @include tablet {
         display: none;
@@ -58,10 +58,10 @@
 
       span {
         display: block;
-        width: 28px;
-        height: 2px;
+        width: pxToRem(28);
+        height: pxToRem(2);
         background-color: $color-yellow;
-        margin-bottom: 9px;
+        margin-bottom: pxToRem(9);
 
         &:last-child {
           margin-bottom: 0;

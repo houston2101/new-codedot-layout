@@ -1,0 +1,8 @@
+.services {
+  background-color: $color-almostwhite;
+  .services__item {
+    display: inline-block;
+    border-radius: pxToRem(20);
+    background-color: $color-white;
+  }
+}
