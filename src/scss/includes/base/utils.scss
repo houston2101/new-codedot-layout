@@ -65,7 +65,7 @@
   position: relative;
   height: 0;
   padding-top: pxToRem(25);
-  padding-bottom: pxToRem(56.25%); /* 16:9 */
+  padding-bottom: 56.25%; /* 16:9 */
 
   iframe {
     position: absolute;

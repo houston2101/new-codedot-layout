@@ -1,0 +1,81 @@
+.nav-toggle {
+  .drop-menu {
+    opacity: 0;
+  }
+
+  .menu__button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: pxToRem(26);
+    height: pxToRem(26);
+    top: pxToRem(20);
+    left: pxToRem(600);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__button > span,
+  .menu__button > span::before,
+  .menu__button > span::after {
+    display: block;
+    position: absolute;
+    height: pxToRem(2);
+    width: 100%;
+    background-color: $color-yellow;
+  }
+
+  .menu__button > span::before {
+    content: "";
+    top: pxToRem(-8);
+  }
+
+  .menu__button > span::after {
+    content: "";
+    top: pxToRem(8);
+  }
+
+  .menu {
+    display: block;
+    position: relative;
+    top: 0;
+    visibility: hidden;
+    text-align: center;
+    top: 0;
+    left: 100%;
+    width: pxToRem(300);
+    height: 100%;
+    margin: 0;
+    padding: pxToRem(80) 0;
+    background-color: $color-white;
+    box-shadow: $boxShadow;
+  }
+
+  .menu-item {
+    text-decoration: none;
+    display: block;
+    padding: pxToRem(12) pxToRem(24);
+    color: $color-black;
+    font-size: pxToRem(20);
+    font-weight: 600;
+  }
+
+  .drop-menu:checked ~ .menu__button > span {
+    transform: rotate(45deg);
+  }
+
+  .drop-menu:checked ~ .menu__button > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  .drop-menu:checked ~ .menu__button > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .drop-menu:checked ~ .menu {
+    visibility: visible;
+    left: pxToRem(20);
+  }
+}
