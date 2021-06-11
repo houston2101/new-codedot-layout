@@ -1,81 +1,87 @@
-.nav-toggle {
-  .drop-menu {
-    opacity: 0;
-  }
+.menuToggle {
+  display: block;
+  position: absolute;
+  top: pxToRem(50);
+  right: pxToRem(50);
+  z-index: 1;
+  user-select: none;
+}
 
-  .menu__button {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    width: pxToRem(26);
-    height: pxToRem(26);
-    top: pxToRem(20);
-    left: pxToRem(600);
-    cursor: pointer;
-    z-index: 1;
-  }
+.menuToggle input {
+  display: block;
+  width: pxToRem(40);
+  height: pxToRem(32);
+  position: absolute;
+  top: pxToRem(-7);
+  left: pxToRem(-5);
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
 
-  .menu__button > span,
-  .menu__button > span::before,
-  .menu__button > span::after {
-    display: block;
-    position: absolute;
-    height: pxToRem(2);
-    width: 100%;
-    background-color: $color-yellow;
-  }
+.menuToggle span {
+  display: block;
+  width: pxToRem(33);
+  height: pxToRem(4);
+  margin-bottom: pxToRem(5);
+  position: relative;
+  background-color: $color-white;
+  border-radius: pxToRem(3);
+  z-index: 1;
+  transform-origin: pxToRem(4) 0;
+}
 
-  .menu__button > span::before {
-    content: "";
-    top: pxToRem(-8);
-  }
+.menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
 
-  .menu__button > span::after {
-    content: "";
-    top: pxToRem(8);
-  }
+.menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
 
-  .menu {
-    display: block;
-    position: relative;
-    top: 0;
-    visibility: hidden;
-    text-align: center;
-    top: 0;
-    left: 100%;
-    width: pxToRem(300);
-    height: 100%;
-    margin: 0;
-    padding: pxToRem(80) 0;
-    background-color: $color-white;
-    box-shadow: $boxShadow;
-  }
+.menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(pxToRem(-2), pxToRem(-1));
+  background-color: $color-yellow;
+}
 
-  .menu-item {
-    text-decoration: none;
-    display: block;
-    padding: pxToRem(12) pxToRem(24);
-    color: $color-black;
-    font-size: pxToRem(20);
-    font-weight: 600;
-  }
+.menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
 
-  .drop-menu:checked ~ .menu__button > span {
-    transform: rotate(45deg);
-  }
+.menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, pxToRem(-1));
+}
 
-  .drop-menu:checked ~ .menu__button > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
+.menu {
+  position: fixed;
+  width: 100% /*pxToRem(500)*/;
+  height: 100% /*pxToRem(500)*/;
+  margin: pxToRem(-100) 0 0 0;
+  padding: pxToRem(50);
+  padding-top: pxToRem(125);
+  right: pxToRem(-100);
+  background-color: $color-white;
+  list-style-type: none;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
 
-  .drop-menu:checked ~ .menu__button > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
+.menu li {
+  padding: pxToRem(10) 0;
+  font-size: pxToRem(22);
+}
 
-  .drop-menu:checked ~ .menu {
-    visibility: visible;
-    left: pxToRem(20);
-  }
+.menuToggle input:checked ~ ul {
+  transform: none;
+  opacity: 1;
+}
+
+#menu {
+  transform: none;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }

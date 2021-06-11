@@ -45,28 +45,5 @@
         display: flex;
       }
     }
-
-    &-toggle {
-      display: block;
-      width: pxToRem(28);
-      height: pxToRem(24);
-      margin-left: pxToRem(6);
-
-      @include tablet {
-        display: none;
-      }
-
-      span {
-        display: block;
-        width: pxToRem(28);
-        height: pxToRem(2);
-        background-color: $color-yellow;
-        margin-bottom: pxToRem(9);
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
   }
 }
