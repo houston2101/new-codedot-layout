@@ -1,8 +1,10 @@
 .menuToggle {
   display: block;
+  width: pxToRem(40);
+  height: pxToRem(32);
   position: absolute;
-  top: pxToRem(50);
-  right: pxToRem(50);
+  right: 0.12rem;
+  top: 1.4rem;
   z-index: 1;
   user-select: none;
 }
