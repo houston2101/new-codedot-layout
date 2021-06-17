@@ -1,4 +1,8 @@
 .menuToggle {
+  @include tablet {
+    display: none;
+  }
+
   display: block;
   width: pxToRem(40);
   height: pxToRem(32);
@@ -64,7 +68,7 @@
     position: fixed;
     width: 100% /*pxToRem(500)*/;
     height: 100% /*pxToRem(500)*/;
-    margin: pxToRem(-50) 0 100 0;
+    margin: pxToRem(-50) 100 0 0;
     padding: pxToRem(50);
     padding-top: pxToRem(125);
     right: pxToRem(-100);
