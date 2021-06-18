@@ -79,7 +79,7 @@ img {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: pxToRem(14);
   font-weight: 400;
   font-style: normal;
@@ -110,7 +110,7 @@ textarea {
     outline: none;
   }
 
-  @include placeholder-color(rgba($color-black,.5));
+  @include placeholder-color(rgba($color-black, 0.5));
 
   &.not-valid {
     border-color: #f00;

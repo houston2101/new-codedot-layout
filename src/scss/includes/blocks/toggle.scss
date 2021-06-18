@@ -77,10 +77,11 @@
       transform-origin: 0% 100%;
     }
   }
+
   .menu {
     position: fixed;
-    width: 100% /*pxToRem(500)*/;
-    height: 100% /*pxToRem(500)*/;
+    width: 100%;
+    height: 100%;
     margin: pxToRem(-50) 100 0 0;
     padding: pxToRem(50);
     padding-top: pxToRem(125);
@@ -89,7 +90,7 @@
     list-style-type: none;
     transform-origin: 0% 0%;
     transform: translate(0, -100%);
-    transition: transform 1s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 
     li {
       padding: pxToRem(10) 0;

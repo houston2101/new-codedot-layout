@@ -1,9 +1,9 @@
 .header {
   background-color: $color-black;
-  position: fixed; /* Set the header to fixed position */
-  top: 0; /* Position the header at the top of the page */
+  position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 2;
 
   .container {
     display: flex;
