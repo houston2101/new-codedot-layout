@@ -1,43 +1,10 @@
-<% var data = { title: "CODE DOT - ..." }; %>
-<%= _.template(require('./../includes/header.html').default)(data) %>
+<link rel="stylesheet" href="css/main.min.css" />
+<% var data = { title: "CODE DOT - ..." }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %> <%=
+_.template(require('./../includes/hero.html').default)(data) %> <%=
+_.template(require('./../includes/services.html').default)(data) %>
 
-<%= _.template(require('./../includes/hero.html').default)(data) %>
-
-<div class="technologies">
-  <div class="technology" id="webdev">
-    <div class="top"></div>
-    <div class="description">
-      <span>Web development</span>
-      <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-        Velit officia consequat duis enim velit mollit.</p>
-      <button class="buttonall" type="button">Show more <img id="arrow" src="../pictures/Arrow.svg">
-      </button>
-    </div>
-  </div>
-
-  <div class="technology" id="design">
-    <div class="top"></div>
-    <div class="description">
-      <span>UI/UX design</span>
-      <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-        Velit officia consequat duis enim velit mollit.</p>
-      <button class="buttonall" type="button">Show more <img id="arrow" src="../pictures/Arrow.svg">
-      </button>
-    </div>
-  </div>
-
-  <div class="technology" id="projman">
-    <div class="top"></div>
-    <div class="description">
-      <span>Project management</span>
-      <p>Amet minim mollit non deserunt ullamco est sit aliqua dolorв do amet sint.
-        Velit officia consequat duis enim velit mollit.</p>
-      <button class="buttonall" type="button">Show more <img id="arrow" src="../pictures/Arrow.svg">
-      </button>
-    </div>
-  </div>
-</div>
-
+<!--
 <div class="portfolio">
   <div class="bestprojs"><p><span><img src="../pictures/triangle.svg">Best projects</span></p></div>
 
@@ -93,13 +60,11 @@
   </div>
 
   <div class="allprojs">
-    <button class="buttonall" name="projects" type="button">All projects <img id="arrow"
-                                                                              src="../pictures/Arrow.svg">
+    <button class="buttonall" name="projects" type="button">All projects <img id="arrow" src="../pictures/arrow.svg">
     </button>
   </div>
 </div>
 
-<!--we need you-->
 <div class="prefooter">
   <div class="jointeam">
     <h2>Become part of our team</h2>
@@ -109,5 +74,6 @@
   <div class="prewhite"></div>
   <div class="preblack"></div>
 </div>
+-->
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

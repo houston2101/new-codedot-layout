@@ -8,7 +8,7 @@
       position: absolute;
       bottom: auto;
       left: auto;
-      box-shadow: 0 pxToRem(5) pxToRem(30) rgba(0,0,0,.1)
+      box-shadow: $boxShadow;
     }
 
     .dropdown-toggle {
@@ -22,7 +22,7 @@
 
   & > &-toggle {
     &::after {
-      content: '';
+      content: "";
       border-style: solid;
       border-color: $color-white;
       transform: rotate(45deg);
@@ -57,10 +57,8 @@
     font-size: pxToRem(16);
     line-height: pxToRem(20);
 
-
-      &:hover {
-        color: lighten($color-black, 40%)
-      }
-
+    &:hover {
+      color: lighten($color-black, 40%);
+    }
   }
 }

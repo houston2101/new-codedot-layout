@@ -4,8 +4,9 @@ $path-img: "../img/";
 
 // Colors
 $color-white: #fff;
+$color-almostwhite: #f8f8fb;
 $color-black: #222;
-$color-yellow: #F5CC3D;
+$color-yellow: #f5cc3d;
 
 // Media queries
 $desktop-extra: pxToRem(1280);
@@ -15,3 +16,4 @@ $mobile: pxToRem(576);
 
 // ..
 $borderRadius: pxToRem(20);
+$boxShadow: 0 pxToRem(5) pxToRem(30) rgba(0, 0, 0, 0.1);

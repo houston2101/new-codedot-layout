@@ -1,0 +1,13 @@
+.services {
+  background-color: $color-almostwhite;
+  .services__item {
+    display: block;
+    border-radius: $borderRadius;
+    background-color: $color-white;
+    margin: pxToRem(20);
+    box-shadow: $boxShadow;
+    padding: pxToRem(10);
+    float: left;
+    width: pxToRem(270);
+  }
+}
