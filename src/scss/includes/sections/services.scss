@@ -4,6 +4,7 @@
   .container {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 
     .services__item {
       border-radius: $borderRadius;
@@ -16,6 +17,7 @@
       &__title {
         font-size: pxToRem(26);
         margin: 0;
+        word-wrap: break-word;
       }
 
       &__text {
@@ -35,14 +37,14 @@
         }
 
         &::after {
-          content: url("../../../img/arrow.svg");
+          content: url("../img/arrow.svg");
           margin-left: pxToRem(6);
         }
       }
     }
   }
 
-  @include tablet {
+  @include desktop {
     .container {
       flex-direction: row;
     }
