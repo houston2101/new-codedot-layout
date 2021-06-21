@@ -1,14 +1,50 @@
 .services {
   background-color: $color-almostwhite;
 
-  .services__item {
-    display: inline-flex;
-    border-radius: $borderRadius;
-    background-color: $color-white;
-    box-shadow: $boxShadow;
-    padding: pxToRem(10);
-    float: left;
-    width: pxToRem(370);
-    margin: pxToRem(20);
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .services__item {
+      border-radius: $borderRadius;
+      background-color: $color-white;
+      box-shadow: $boxShadow;
+      margin: 3%;
+      display: inline-block;
+      padding: pxToRem(25);
+
+      &__title {
+        font-size: pxToRem(26);
+        margin: 0;
+      }
+
+      &__text {
+        font-size: pxToRem(20);
+      }
+
+      &__link {
+        font-size: pxToRem(20);
+        color: $color-deepyellow;
+        font-weight: bold;
+        border-radius: $borderRadius;
+        padding: pxToRem(9);
+        margin-left: pxToRem(-9);
+
+        &:hover {
+          background-color: $color-paleyellow;
+        }
+
+        &::after {
+          content: url("../../../img/arrow.svg");
+          margin-left: pxToRem(6);
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    .container {
+      flex-direction: row;
+    }
   }
 }
