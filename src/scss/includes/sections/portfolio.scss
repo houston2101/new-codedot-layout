@@ -1,0 +1,61 @@
+.portfolio {
+  background-color: $color-white;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    &__title {
+      font-weight: bold;
+      font-size: pxToRem(25);
+      padding-left: 3%;
+      padding-top: 4%;
+
+      &::before {
+        content: url("../../../img/triangle.svg");
+        margin: pxToRem(6);
+      }
+    }
+
+    &__item {
+      &__elem {
+        background-color: $color-yellow;
+        width: 80%;
+        height: pxToRem(324);
+        border-radius: $borderRadius;
+        box-shadow: $boxShadow;
+        margin: auto;
+        margin-top: pxToRem(40);
+        margin-bottom: pxToRem(15);
+      }
+
+      &__title {
+        font-weight: bold;
+        font-size: pxToRem(25);
+        margin-left: 11%;
+      }
+
+      &__link {
+        text-align: center;
+        font-size: pxToRem(20);
+        color: $color-deepyellow;
+        font-weight: bold;
+        border-radius: $borderRadius;
+        padding: pxToRem(9);
+        margin-left: pxToRem(56);
+        margin-top: pxToRem(19);
+        width: pxToRem(170);
+
+        &:hover {
+          background-color: $color-paleyellow;
+        }
+
+        &::after {
+          content: url("../img/arrow.svg");
+          margin-left: pxToRem(6);
+        }
+      }
+    }
+  }
+}
