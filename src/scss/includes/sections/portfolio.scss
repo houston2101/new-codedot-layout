@@ -8,7 +8,7 @@
 
     &__title {
       font-weight: bold;
-      font-size: pxToRem(25);
+      font-size: pxToRem(40);
       padding-left: 3%;
       padding-top: 4%;
 
@@ -18,6 +18,79 @@
       }
     }
 
+    /********* desktop version *********/
+    &__item {
+      width: 90%;
+      height: pxToRem(535);
+      border-radius: $borderRadius;
+      margin: auto;
+      margin-top: pxToRem(40);
+      margin-bottom: pxToRem(15);
+
+      &:hover {
+        background-color: $color-pallidyellow;
+      }
+
+      &__elem {
+        display: block;
+        background-color: $color-yellow;
+        width: pxToRem(532);
+        height: pxToRem(340);
+        border-radius: $borderRadius;
+        margin-top: pxToRem(35);
+        margin-left: pxToRem(35);
+        position: absolute;
+        box-shadow: $boxShadow;
+      }
+
+      &__sub-elem__left {
+        display: block;
+        background-color: $color-middleyellow;
+        width: pxToRem(237);
+        height: pxToRem(408);
+        border-radius: $borderRadius;
+        margin-top: pxToRem(90);
+        margin-left: pxToRem(72);
+        position: absolute;
+        box-shadow: $boxShadow;
+      }
+
+      &__sub-elem__right {
+        display: block;
+        background-color: $color-brightyellow;
+        width: pxToRem(206);
+        height: pxToRem(206);
+        border-radius: $borderRadius;
+        margin-top: pxToRem(248);
+        margin-left: pxToRem(385);
+        position: absolute;
+        box-shadow: $boxShadow;
+      }
+
+      &__link {
+        text-align: center;
+        font-size: pxToRem(20);
+        color: $color-deepyellow;
+        font-weight: bold;
+        border-radius: $borderRadius;
+        padding: pxToRem(9);
+        margin-left: 5%;
+        margin-top: pxToRem(19);
+        width: pxToRem(170);
+
+        &:hover {
+          background-color: $color-paleyellow;
+        }
+
+        &::after {
+          content: url("../img/arrow.svg");
+          margin-left: pxToRem(6);
+        }
+      }
+    }
+    /********* *************** *********/
+
+    /********* mobile version
     &__item {
       &__elem {
         background-color: $color-yellow;
@@ -30,10 +103,17 @@
         margin-bottom: pxToRem(15);
       }
 
+      &__subelem-left {
+      }
+
+      &__subelem-right {
+      }
+
       &__title {
         font-weight: bold;
         font-size: pxToRem(25);
         margin-left: 10%;
+        padding: pxToRem(9);
       }
 
       &__link {
@@ -56,6 +136,7 @@
           margin-left: pxToRem(6);
         }
       }
-    }
+    } 
+    ********/
   }
 }
