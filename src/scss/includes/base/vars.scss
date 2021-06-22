@@ -4,17 +4,17 @@ $path-img: "../img/";
 
 // Colors
 $color-white: #fff;
-$color-almostwhite: #f8f8fb;
+$color-almostWhite: #f8f8fb;
 $color-yellow: #f5cc3d;
-$color-deepyellow: #e1af00;
-$color-paleyellow: #fff5d0;
-$color-lightpaleyellow: #fefaec;
-$color-brightyellow: #ffc600;
-$color-middleyellow: #ffe794;
-$color-pallidyellow: #fefaec;
-$color-totalblack: #141414;
+$color-deepYellow: #e1af00;
+$color-paleYellow: #fff5d0;
+$color-lightPaleYellow: #fefaec;
+$color-brightYellow: #ffc600;
+$color-middleYellow: #ffe794;
+$color-pallidYellow: #fefaec;
+$color-totalBlack: #141414;
 $color-black: #222222;
-$color-deepgray: #2a2a2a;
+$color-deepGray: #2a2a2a;
 
 // Media queries
 $desktop-extra: pxToRem(1280);
@@ -23,9 +23,8 @@ $tablet: pxToRem(768);
 $mobile: pxToRem(576);
 
 // Font-sizes
-$font-size-textblock: pxToRem(20);
+$font-size-textblock: pxToRem(25);
 $font-size-header: pxToRem(40);
-
 // ..
 $borderRadius: pxToRem(20);
 $boxShadow: 0 pxToRem(5) pxToRem(30) rgba(0, 0, 0, 0.1);

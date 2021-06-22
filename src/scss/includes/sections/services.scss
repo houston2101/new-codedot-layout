@@ -1,5 +1,5 @@
 .services {
-  background-color: $color-almostwhite;
+  background-color: $color-almostWhite;
 
   .container {
     display: flex;
@@ -26,14 +26,14 @@
 
       &__link {
         font-size: pxToRem(20);
-        color: $color-deepyellow;
+        color: $color-deepYellow;
         font-weight: bold;
         border-radius: $borderRadius;
         padding: pxToRem(9);
         margin-left: pxToRem(-9);
 
         &:hover {
-          background-color: $color-paleyellow;
+          background-color: $color-paleYellow;
         }
 
         &::after {

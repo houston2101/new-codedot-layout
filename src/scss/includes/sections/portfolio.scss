@@ -28,7 +28,7 @@
       margin-bottom: pxToRem(15);
 
       &:hover {
-        background-color: $color-pallidyellow;
+        background-color: $color-pallidYellow;
       }
 
       &__elem {
@@ -45,7 +45,7 @@
 
       &__sub-elem__left {
         display: block;
-        background-color: $color-middleyellow;
+        background-color: $color-middleYellow;
         width: pxToRem(237);
         height: pxToRem(408);
         border-radius: $borderRadius;
@@ -57,7 +57,7 @@
 
       &__sub-elem__right {
         display: block;
-        background-color: $color-brightyellow;
+        background-color: $color-brightYellow;
         width: pxToRem(206);
         height: pxToRem(206);
         border-radius: $borderRadius;
@@ -70,7 +70,7 @@
       &__link {
         text-align: center;
         font-size: pxToRem(20);
-        color: $color-deepyellow;
+        color: $color-deepYellow;
         font-weight: bold;
         border-radius: $borderRadius;
         padding: pxToRem(9);
@@ -79,7 +79,7 @@
         width: pxToRem(170);
 
         &:hover {
-          background-color: $color-paleyellow;
+          background-color: $color-paleYellow;
         }
 
         &::after {
@@ -113,7 +113,7 @@
       &__link {
         text-align: center;
         font-size: pxToRem(20);
-        color: $color-deepyellow;
+        color: $color-deepYellow;
         font-weight: bold;
         border-radius: $borderRadius;
         padding: pxToRem(9);
@@ -122,7 +122,7 @@
         width: pxToRem(170);
 
         &:hover {
-          background-color: $color-paleyellow;
+          background-color: $color-paleYellow;
         }
 
         &::after {

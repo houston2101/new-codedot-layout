@@ -1,43 +1,41 @@
 // font Montserrat
 @font-face {
-  font-family: 'montserrat';
-  src: local('montserrat extralight'), local('montserrat-extralight'),
-  url('#{$path-fonts}extralight.woff2') format('woff2'),
-  url('#{$path-fonts}extralight.woff') format('woff'),
-  url('#{$path-fonts}extralight.ttf') format('truetype');
+  font-family: "montserrat";
+  src: local("montserrat extralight"), local("montserrat-extralight"),
+    url("#{$path-fonts}extralight.woff2") format("woff2"),
+    url("#{$path-fonts}extralight.woff") format("woff"),
+    url("#{$path-fonts}extralight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'montserrat';
-  src: local('montserrat light'), local('montserrat-light'),
-  url('#{$path-fonts}light.woff2') format('woff2'),
-  url('#{$path-fonts}light.woff') format('woff'),
-  url('#{$path-fonts}light.ttf') format('truetype');
+  font-family: "montserrat";
+  src: local("montserrat light"), local("montserrat-light"),
+    url("#{$path-fonts}light.woff2") format("woff2"), url("#{$path-fonts}light.woff") format("woff"),
+    url("#{$path-fonts}light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'montserrat';
-  src: local('montserrat regular'), local('montserrat-regular'),
-  url('#{$path-fonts}regular.woff2') format('woff2'),
-  url('#{$path-fonts}regular.woff') format('woff'),
-  url('#{$path-fonts}regular.ttf') format('truetype');
+  font-family: "montserrat";
+  src: local("montserrat regular"), local("montserrat-regular"),
+    url("#{$path-fonts}regular.woff2") format("woff2"),
+    url("#{$path-fonts}regular.woff") format("woff"),
+    url("#{$path-fonts}regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'montserrat';
-  src: local('montserrat bold'), local('montserrat-bold'),
-  url('#{$path-fonts}bold.woff2') format('woff2'),
-  url('#{$path-fonts}bold.woff') format('woff'),
-  url('#{$path-fonts}bold.ttf') format('truetype');
+  font-family: "montserrat";
+  src: local("montserrat bold"), local("montserrat-bold"),
+    url("#{$path-fonts}bold.woff2") format("woff2"), url("#{$path-fonts}bold.woff") format("woff"),
+    url("#{$path-fonts}bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
