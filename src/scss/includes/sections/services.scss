@@ -10,7 +10,7 @@
       flex-direction: row;
     }
 
-    .services__item {
+    &__item {
       border-radius: $borderRadius;
       background-color: $color-white;
       box-shadow: $boxShadow;

@@ -6,10 +6,6 @@
     flex-direction: column;
     max-width: 120rem;
 
-    @include desktop {
-      flex-direction: row;
-    }
-
     /********* title portfolio *********/
     &__title {
       font-weight: bold;
@@ -24,86 +20,51 @@
     }
 
     &__item {
-      max-width: 90%;
       border-radius: $borderRadius;
-      margin: auto;
-      margin-top: pxToRem(40);
-      margin-bottom: pxToRem(15);
+      margin: 2%;
+      display: inline-block;
 
       &:hover {
         background-color: $color-pallidYellow;
       }
 
-      &__info {
-        width: pxToRem(560);
-
-        &__title {
-          font-weight: bold;
-          font-size: $font-size-header;
-
-          @include desktop {
-            font-weight: normal;
-          }
-        }
-
-        &__description {
-          visibility: hidden;
-          font-size: $font-size-textblock;
-          font-weight: normal;
-
-          @include desktop {
-            visibility: visible;
-          }
-        }
-      }
-
       &__elems {
-        display: block;
-        max-width: 90%;
-        position: relative;
+        display: inline-block;
+        margin: 3%;
+        position: absolute;
 
         &__elem {
-          position: absolute;
           background-color: $color-yellow;
           width: pxToRem(532);
           height: pxToRem(340);
           border-radius: $borderRadius;
-          margin-top: pxToRem(35);
-          margin-left: pxToRem(35);
           box-shadow: $boxShadow;
+          position: absolute;
         }
 
         &__sub-elem__left {
-          visibility: hidden;
-          position: absolute;
           background-color: $color-middleYellow;
           width: pxToRem(237);
           height: pxToRem(408);
           border-radius: $borderRadius;
-          margin-top: pxToRem(90);
-          margin-left: pxToRem(72);
           box-shadow: $boxShadow;
-
-          @include desktop {
-            visibility: visible;
-          }
+          position: absolute;
         }
 
         &__sub-elem__right {
-          position: absolute;
-          visibility: hidden;
           background-color: $color-brightYellow;
           width: pxToRem(206);
           height: pxToRem(206);
           border-radius: $borderRadius;
-          margin-top: pxToRem(248);
-          margin-left: pxToRem(385);
           box-shadow: $boxShadow;
-
-          @include desktop {
-            visibility: visible;
-          }
+          position: absolute;
         }
+      }
+
+      &__info {
+        display: inline-block;
+        margin: 3%;
+        position: absolute;
       }
     }
   }
