@@ -4,7 +4,24 @@
   .container {
     display: flex;
     flex-direction: column;
-    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+      min-width: pxToRem(576);
+    }
+
+    @include tablet {
+      min-width: pxToRem(768);
+    }
+
+    @include desktop-extra {
+      min-width: pxToRem(992);
+    }
+
+    @include desktop-extra {
+      min-width: pxToRem(1280);
+    }
 
     /********* title portfolio *********/
     &__title {
@@ -12,6 +29,7 @@
       font-size: pxToRem(40);
       padding-left: 3%;
       padding-top: 4%;
+      margin-bottom: pxToRem(26);
 
       &::before {
         content: url("../../../img/triangle.svg");
@@ -19,19 +37,28 @@
       }
     }
 
+    /********* project block *********/
     &__item {
+      display: flex;
+      min-height: pxToRem(532);
+      margin-bottom: pxToRem(65);
       border-radius: $borderRadius;
-      margin: 2%;
-      display: inline-block;
+      flex-direction: column;
+      padding-right: pxToRem(34);
+
+      @include desktop-extra {
+        flex-direction: row;
+        max-width: 80rem;
+      }
 
       &:hover {
         background-color: $color-pallidYellow;
       }
 
       &__elems {
-        display: inline-block;
-        margin: 3%;
-        position: absolute;
+        position: relative;
+        padding-top: pxToRem(35);
+        padding-left: pxToRem(35);
 
         &__elem {
           background-color: $color-yellow;
@@ -39,32 +66,71 @@
           height: pxToRem(340);
           border-radius: $borderRadius;
           box-shadow: $boxShadow;
-          position: absolute;
         }
 
         &__sub-elem__left {
+          visibility: hidden;
           background-color: $color-middleYellow;
           width: pxToRem(237);
           height: pxToRem(408);
           border-radius: $borderRadius;
           box-shadow: $boxShadow;
+          top: pxToRem(90);
+          left: pxToRem(72);
           position: absolute;
+          z-index: 1;
+
+          @include desktop-extra {
+            visibility: visible;
+          }
         }
 
         &__sub-elem__right {
+          visibility: hidden;
           background-color: $color-brightYellow;
           width: pxToRem(206);
           height: pxToRem(206);
           border-radius: $borderRadius;
           box-shadow: $boxShadow;
+          top: pxToRem(248);
+          left: pxToRem(385);
           position: absolute;
+          z-index: 1;
+
+          @include desktop-extra {
+            visibility: visible;
+          }
         }
       }
 
       &__info {
-        display: inline-block;
-        margin: 3%;
-        position: absolute;
+        padding-top: pxToRem(20);
+        padding-left: pxToRem(24);
+
+        @include desktop-extra {
+          padding-top: pxToRem(97);
+          padding-left: pxToRem(78);
+        }
+
+        &__title {
+          font-size: $font-size-header;
+          font-weight: bold;
+
+          @include desktop-extra {
+            font-weight: normal;
+          }
+        }
+
+        &__description {
+          visibility: hidden;
+          font-size: $font-size-textblock;
+          font-weight: 200;
+
+          @include desktop-extra {
+            visibility: visible;
+            padding-top: pxToRem(50);
+          }
+        }
       }
     }
   }
