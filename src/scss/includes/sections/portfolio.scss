@@ -4,8 +4,13 @@
   .container {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 120rem;
 
+    @include desktop {
+      flex-direction: row;
+    }
+
+    /********* title portfolio *********/
     &__title {
       font-weight: bold;
       font-size: pxToRem(40);
@@ -18,10 +23,8 @@
       }
     }
 
-    /********* desktop version *********/
     &__item {
-      width: 90%;
-      height: pxToRem(535);
+      max-width: 90%;
       border-radius: $borderRadius;
       margin: auto;
       margin-top: pxToRem(40);
@@ -31,106 +34,77 @@
         background-color: $color-pallidYellow;
       }
 
-      &__elem {
-        display: block;
-        background-color: $color-yellow;
-        width: pxToRem(532);
-        height: pxToRem(340);
-        border-radius: $borderRadius;
-        margin-top: pxToRem(35);
-        margin-left: pxToRem(35);
-        position: absolute;
-        box-shadow: $boxShadow;
-      }
+      &__info {
+        width: pxToRem(560);
 
-      &__sub-elem__left {
-        display: block;
-        background-color: $color-middleYellow;
-        width: pxToRem(237);
-        height: pxToRem(408);
-        border-radius: $borderRadius;
-        margin-top: pxToRem(90);
-        margin-left: pxToRem(72);
-        position: absolute;
-        box-shadow: $boxShadow;
-      }
+        &__title {
+          font-weight: bold;
+          font-size: $font-size-header;
 
-      &__sub-elem__right {
-        display: block;
-        background-color: $color-brightYellow;
-        width: pxToRem(206);
-        height: pxToRem(206);
-        border-radius: $borderRadius;
-        margin-top: pxToRem(248);
-        margin-left: pxToRem(385);
-        position: absolute;
-        box-shadow: $boxShadow;
-      }
-
-      &__link {
-        text-align: center;
-        font-size: pxToRem(20);
-        color: $color-deepYellow;
-        font-weight: bold;
-        border-radius: $borderRadius;
-        padding: pxToRem(9);
-        margin-left: 5%;
-        margin-top: pxToRem(19);
-        width: pxToRem(170);
-
-        &:hover {
-          background-color: $color-paleYellow;
+          @include desktop {
+            font-weight: normal;
+          }
         }
 
-        &::after {
-          content: url("../img/arrow.svg");
-          margin-left: pxToRem(6);
+        &__description {
+          visibility: hidden;
+          font-size: $font-size-textblock;
+          font-weight: normal;
+
+          @include desktop {
+            visibility: visible;
+          }
+        }
+      }
+
+      &__elems {
+        display: block;
+        max-width: 90%;
+        position: relative;
+
+        &__elem {
+          position: absolute;
+          background-color: $color-yellow;
+          width: pxToRem(532);
+          height: pxToRem(340);
+          border-radius: $borderRadius;
+          margin-top: pxToRem(35);
+          margin-left: pxToRem(35);
+          box-shadow: $boxShadow;
+        }
+
+        &__sub-elem__left {
+          visibility: hidden;
+          position: absolute;
+          background-color: $color-middleYellow;
+          width: pxToRem(237);
+          height: pxToRem(408);
+          border-radius: $borderRadius;
+          margin-top: pxToRem(90);
+          margin-left: pxToRem(72);
+          box-shadow: $boxShadow;
+
+          @include desktop {
+            visibility: visible;
+          }
+        }
+
+        &__sub-elem__right {
+          position: absolute;
+          visibility: hidden;
+          background-color: $color-brightYellow;
+          width: pxToRem(206);
+          height: pxToRem(206);
+          border-radius: $borderRadius;
+          margin-top: pxToRem(248);
+          margin-left: pxToRem(385);
+          box-shadow: $boxShadow;
+
+          @include desktop {
+            visibility: visible;
+          }
         }
       }
     }
-    /********* *************** *********/
-
-    /********* mobile version
-    &__item {
-      &__elem {
-        background-color: $color-yellow;
-        width: 80%;
-        height: pxToRem(324);
-        border-radius: $borderRadius;
-        box-shadow: $boxShadow;
-        margin: auto;
-        margin-top: pxToRem(40);
-        margin-bottom: pxToRem(15);
-      }
-
-      &__title {
-        font-weight: bold;
-        font-size: pxToRem(25);
-        margin-left: 10%;
-        padding: pxToRem(9);
-      }
-
-      &__link {
-        text-align: center;
-        font-size: pxToRem(20);
-        color: $color-deepYellow;
-        font-weight: bold;
-        border-radius: $borderRadius;
-        padding: pxToRem(9);
-        margin-left: 10%;
-        margin-top: pxToRem(19);
-        width: pxToRem(170);
-
-        &:hover {
-          background-color: $color-paleYellow;
-        }
-
-        &::after {
-          content: url("../img/arrow.svg");
-          margin-left: pxToRem(6);
-        }
-      }
-    } 
-    ********/
   }
 }
