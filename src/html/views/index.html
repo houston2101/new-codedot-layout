@@ -1,7 +1,10 @@
-<link rel="stylesheet" href="css/main.min.css" />
-<% var data = { title: "CODE DOT - ..." }; %> <%=
-_.template(require('./../includes/header.html').default)(data) %> <%=
-_.template(require('./../includes/hero.html').default)(data) %> <%=
-_.template(require('./../includes/services.html').default)(data) %> <%=
-_.template(require('./../includes/portfolio.html').default)(data) %> <%=
-_.template(require('./../includes/footer.html').default)(data) %>
+<% var data = { title: "CODE DOT - ..." }; %>
+<%=_.template(require('./../includes/_html-top.html').default)(data) %>
+
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/hero.html').default)(data) %>
+<%= _.template(require('./../includes/services.html').default)(data) %>
+<%= _.template(require('./../includes/portfolio.html').default)(data) %>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/_html-bottom.html').default)(data) %>

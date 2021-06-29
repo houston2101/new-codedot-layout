@@ -17,10 +17,11 @@ $color-black: #222222;
 $color-deepGray: #2a2a2a;
 
 // Media queries
-$desktop-extra: pxToRem(1280);
-$desktop: pxToRem(992);
-$tablet: pxToRem(768);
-$mobile: pxToRem(576);
+$breakpoints-xxl: pxToRem(1536);
+$breakpoints-xl: pxToRem(1280);
+$breakpoints-lg: pxToRem(992);
+$breakpoints-md: pxToRem(768);
+$breakpoints-sm: pxToRem(480);
 
 // Font-sizes
 $font-size-textblock: pxToRem(25);

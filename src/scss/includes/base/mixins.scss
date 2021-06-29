@@ -51,25 +51,25 @@
 }
 
 @mixin desktop-extra() {
-  @media (min-width: $desktop-extra) {
+  @media (min-width: $breakpoints-xl) {
     @content;
   }
 }
 
 @mixin desktop() {
-  @media (min-width: $desktop) {
+  @media (min-width: $breakpoints-lg) {
     @content;
   }
 }
 
 @mixin tablet() {
-  @media (min-width: $tablet) {
+  @media (min-width: $breakpoints-md) {
     @content;
   }
 }
 
 @mixin mobile() {
-  @media (min-width: $mobile) {
+  @media (min-width: $breakpoints-sm) {
     @content;
   }
 }

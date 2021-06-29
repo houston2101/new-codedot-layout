@@ -1,51 +1,51 @@
-.navbar {
+.nav {
   display: flex;
   align-items: center;
 
-  .nav {
-    &-list {
-      display: flex;
+  &-list {
+    display: flex;
 
-      &.languages .dropdown-menu {
-        transform: translateX(pxToRem(-38));
+    &.languages .dropdown-menu {
+      transform: translateX(pxToRem(-38));
 
-        @include desktop {
-          transform: translateX(pxToRem(-16));
-        }
+      @include desktop {
+        transform: translateX(pxToRem(-16));
+      }
 
-        @include desktop-extra {
-          transform: none;
-        }
+      @include desktop-extra {
+        transform: none;
       }
     }
+  }
 
-    &-link {
-      font-size: pxToRem(20);
+  &-link {
+    @include desktop {
+      font-size: pxToRem(16);
+      font-weight: 400;
       line-height: pxToRem(20);
       color: $color-white;
       padding: pxToRem(12) pxToRem(16);
-      margin-right: pxToRem(20);
       cursor: pointer;
       display: block;
-      font-weight: 400;
-      z-index: 2;
+    }
 
-      &:hover {
+    &:hover {
+      @include desktop {
         color: $color-yellow;
-      }
-
-      &.btn {
-        margin-left: pxToRem(16);
-        margin-right: pxToRem(16);
       }
     }
 
-    &-menu {
-      display: none;
+    &.btn {
+      margin-left: pxToRem(16);
+      margin-right: pxToRem(16);
+    }
+  }
 
-      @include tablet {
-        display: flex;
-      }
+  &-menu {
+    display: none;
+
+    @include tablet {
+      display: flex;
     }
   }
 }
